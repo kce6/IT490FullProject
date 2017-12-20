@@ -3,14 +3,16 @@ import json
 import urllib.request
 import sys
 
-
+#Takes time in raw format and converts it to a more readable format
 def time_converter(time):
     converted_time = datetime.datetime.fromtimestamp(
         int(time)
     ).strftime('%I:%M %p')
     return converted_time
 
-
+#creates the URL to be used in the API call.  This function is important becuase
+#it allows the script to take multiple different inputs such as zipcode, city name
+#or unique city identifier
 def url_builder(city_id):
     user_api = '79d39c31d2810edccbc44b02beeb85f0'  # Obtain yours form: http://openweathermap.org/
     unit = 'imperial'  # For Fahrenheit use imperial, for Celsius use metric, and the default is Kelvin.
@@ -19,7 +21,7 @@ def url_builder(city_id):
     full_api_url = api + str(city_id) + '&mode=json&units=' + unit + '&APPID=' + user_api
     return full_api_url
 
-
+#makes the actual API call
 def data_fetch(full_api_url):
     url = urllib.request.urlopen(full_api_url)
     output = url.read().decode('utf-8')
@@ -27,7 +29,7 @@ def data_fetch(full_api_url):
     url.close()
     return raw_api_dict
 
-
+#takes the retrieved data and stores in in variables for output
 def data_organizer(raw_api_dict):
     data = dict(
         city=raw_api_dict.get('name'),
@@ -47,7 +49,8 @@ def data_organizer(raw_api_dict):
     )
     return data
 
-
+#function that outputs the API data.  Tried to have all of this written to files
+#for historical information as well but couldnt get it fully functioning
 def data_output(data):
     m_symbol = '\xb0' + 'C'
     print('---------------------------------------')
@@ -78,7 +81,7 @@ def data_output(data):
     print('---------------------------------------')
     #storageFile.write
 
-
+#runs the program with given paramters
 if __name__ == '__main__':
     try:
         data_output(data_organizer(data_fetch(url_builder("07735"))))
