@@ -1,0 +1,103 @@
+#background {
+    background-image: url('https://media.giphy.com/media/xTcnT45z6H5gxFYZZS/giphy.gif');
+    position:absolute; left:0px; right:0px; top:0px; bottom:0px;
+    background-size: cover;
+}
+#ribbon button
+{
+    font-weight: bold;
+    color:#595959;
+    margin: 0px;
+}
+#ribbon h4
+{
+    font-size: 20px;
+    font-weight: bold;
+    color:#595959;
+    margin: 0px;
+}
+#ribbon
+{
+    width: 100%;
+    height:30px;
+    margin:0px;
+    background-color:#1a1a1a; 
+}
+#input-group
+{
+    padding:15px 0px 0px 0px;
+}
+.col-md-8
+{
+    width:300px;
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:30%;
+    margin:-100px 0 0 -150px;
+}
+#LoginDiv {
+    opacity: 0.9;
+    padding: 10px;
+    margin: 50px auto;
+    width: 360px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+h1 {
+    text-align: center;
+    font-size: 175%;
+    color: #757575;
+    font-weight: 300;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+h1, input {
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+.form-control {
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: 1px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+}
+.form-control:focus {
+    outline: none;
+}
+.form-control:hover {
+    border-bottom-color: #dcdcdc;
+}
+.form-control:invalid {
+    box-shadow: none;
+}
+.col-md-8 .btn {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    display: block;
+    margin: 30px auto 30px;
+    color: white;
+    background-color: #0099ff;
+    border: none;
+    -webkit-box-shadow: 0 5px 0 #007acc;
+    -moz-box-shadow: 0 5px 0 #007acc;
+    box-shadow: 0 5px 0 #007acc;
+}
+.col-md-8 .btn:hover {
+    top: 2px;
+    -webkit-box-shadow: 0 3px 0 #66c2ff;
+    -moz-box-shadow: 0 3px 0 #66c2ff;
+    box-shadow: 0 3px 0 #007acc;
+}
+.col-md-8 .btn:active {
+    top: 5px;
+    box-shadow: none;
+}
+.col-md-8 .btn:focus {
+    outline: none;
+}

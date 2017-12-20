@@ -1,0 +1,10 @@
+.modal-xl {
+    width: 90% !important;
+  }
+.modal-xl .modal-content
+{
+  border-radius: 0px;
+}
+.registerModal .modal-content{
+  border-radius: 0px;
+  }

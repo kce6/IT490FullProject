@@ -1,0 +1,68 @@
+{
+  "Storms": [{
+      "name": "Ana",
+      "series": [{
+          "YEAR": "05/08/12Z",
+          "ADV": "3",
+          "LAT": "31",
+          "LON": "-77.3",
+          "WIND": "40",
+          "PR": "1001",
+          "STAT": "TROPICAL STORM"
+        },
+        {
+          "YEAR": "05/09/06Z",
+          "ADV": "6",
+          "LAT": "32",
+          "LON": "-77.6",
+          "WIND": "50",
+          "PR": "998",
+          "STAT": "SUBTROPICAL STORM"
+        },
+        {
+          "YEAR": "05/10/00Z",
+          "ADV": "9",
+          "LAT": "33",
+          "LON": "-78.3",
+          "WIND": "50",
+          "PR": "1000",
+          "STAT": "TROPICAL STORM"
+        }
+      ]
+    },
+    {
+      "name": "Hela",
+      "series": [{
+          "YEAR": "2015",
+          "ADV": "",
+          "LAT": "",
+          "LON": "",
+          "TIME": "",
+          "WIND": "",
+          "PR": "",
+          "STAT": ""
+        },
+        {
+          "YEAR": "2015",
+          "ADV": "",
+          "LAT": "",
+          "LON": "",
+          "TIME": "",
+          "WIND": "",
+          "PR": "",
+          "STAT": ""
+        },
+        {
+          "YEAR": "2015",
+          "ADV": "",
+          "LAT": "",
+          "LON": "",
+          "TIME": "",
+          "WIND": "",
+          "PR": "",
+          "STAT": ""
+        }
+      ]
+    }
+    ]
+  }

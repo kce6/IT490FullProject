@@ -1,0 +1,15 @@
+.controls
+{
+    text-align: center;
+}
+#Charts{
+    overflow-x: scroll;
+}
+.testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .testimonial-group > .row > .col-md-8{
+    display: inline-block;
+    float: none;
+  }

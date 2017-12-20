@@ -1,0 +1,20 @@
+{"level":"info","message":"User Logged in with email: FART","timestamp":"2017-12-04T19:24:09.656Z"}
+{"level":"info","message":"Attempted User Log in with email: asdasd","timestamp":"2017-12-04T21:01:38.798Z"}
+{"level":"info","message":"Attempted User Log in with email: asdasd","timestamp":"2017-12-04T21:01:45.221Z"}
+{"level":"info","message":"User attempted Login with email:example@gmail.com","timestamp":"2017-12-04T21:54:47.066Z"}
+{"level":"info","message":"User attempted Login with email:undefined","timestamp":"2017-12-04T21:58:20.435Z"}
+{"level":"info","message":"Getting Weather data by name:Ana","timestamp":"2017-12-04T21:58:25.144Z"}
+{"level":"info","message":" Weather data by name:Ana found!","timestamp":"2017-12-04T21:58:25.167Z"}
+{"level":"info","message":"Getting Weather data by name:JOE","timestamp":"2017-12-04T21:58:43.900Z"}
+{"level":"info","message":" Weather data by name:JOE not found!","timestamp":"2017-12-04T21:58:43.906Z"}
+{"level":"info","message":"User attempted Login with email:undefined","timestamp":"2017-12-06T23:11:19.965Z"}
+{"level":"info","message":"Getting Weather data by name:Ana","timestamp":"2017-12-06T23:11:30.757Z"}
+{"level":"info","message":" Weather data by name:Ana found!","timestamp":"2017-12-06T23:11:30.781Z"}
+{"level":"info","message":"Getting Weather data by name:Ana","timestamp":"2017-12-06T23:11:36.429Z"}
+{"level":"info","message":" Weather data by name:Ana found!","timestamp":"2017-12-06T23:11:36.441Z"}
+{"level":"info","message":"Getting Weather data by name:Ana","timestamp":"2017-12-06T23:11:40.499Z"}
+{"level":"info","message":" Weather data by name:Ana found!","timestamp":"2017-12-06T23:11:40.506Z"}
+{"level":"info","message":"Getting Weather data by name:Ana","timestamp":"2017-12-06T23:12:03.063Z"}
+{"level":"info","message":" Weather data by name:Ana found!","timestamp":"2017-12-06T23:12:03.071Z"}
+{"level":"info","message":"Getting Weather data by name:","timestamp":"2017-12-06T23:12:29.485Z"}
+{"level":"info","message":" Weather data by name: not found!","timestamp":"2017-12-06T23:12:29.491Z"}

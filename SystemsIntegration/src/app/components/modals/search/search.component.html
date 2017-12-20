@@ -1,0 +1,66 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="controls span2 row">
+    <!--
+    <h4>Show: &nbsp;</h4>
+    <input type="checkbox" value="option1" id="inlineCheckbox1" /> Latitude
+    <input type="checkbox" value="option2" id="inlineCheckbox2" /> Longitude
+    <input type="checkbox" value="option3" id="inlineCheckbox3" /> WindSpeed
+    <input type="checkbox" value="option3" id="inlineCheckbox3" /> Percipitation
+    <input type="checkbox" value="option4" id="inlineCheckbox4" /> Stat
+        -->
+  </div>
+  <div class="container testimonial-group">
+    <div class="row" id="Charts">
+      <div class="col-md-8" id="WindspeedGraph">
+        <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [results]="WIND" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
+          [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="'OverTime'" [yAxisLabel]="'WindSpeed per Hour'"
+          [autoScale]="autoScale" (select)="onSelect($event)">
+        </ngx-charts-line-chart>
+      </div>
+      <div class="col-md-8" id="Latitude">
+        <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [results]="LAT" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
+          [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="'OverTime'" [yAxisLabel]="'Latitude'"
+          [autoScale]="autoScale" (select)="onSelect($event)">
+        </ngx-charts-line-chart>
+      </div>
+
+      <div class="col-md-8" id="Longitude">
+        <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [results]="LON" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
+          [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="'OverTime'" [yAxisLabel]="'Longitude'"
+          [autoScale]="autoScale" (select)="onSelect($event)">
+        </ngx-charts-line-chart>
+      </div>
+
+      <div class="col-md-8" id="Percipitation">
+        <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [results]="PR" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
+          [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="'OverTime'" [yAxisLabel]="'Percepitation'"
+          [autoScale]="autoScale" (select)="onSelect($event)">
+        </ngx-charts-line-chart>
+      </div>
+    </div>
+    <div class="row" id="Stats">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <td>Date</td>
+            <td>Severity</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let storm of STAT[0].series">
+            <td> {{storm.name}}</td>
+            <td> {{storm.value}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+</div>
