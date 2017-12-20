@@ -1,0 +1,52 @@
+Server Documentation by Functionality
+-------------------------------------
+
+1.  Front End
+2.  Backend/DB
+3.  RabbitMQ
+4.  Data Extraction
+
+
+1. Front End
+------------
+
+The front end consists of a collection of files hosted on Jason's machine.  This
+machine serves as the first point of contact for our system as it is the actual
+web application.  Front end makes calls using RabbitMQ to the database in order
+to authenticate and log in users, retrieve user information and display data
+to end users.  Three separate clusters exist for the Front end, comprising of a
+Development, Quality Assurance (testing), and Production with a hot standby for
+the Production cluster incase of an outage.
+
+
+2. Backend/DB
+-------------
+
+The backend/DB system is comprised of Zonaid's machine running MySQL server with
+three separate clusters for Development, Quality Assurance (Testing), and Production
+with a hot standby for the Production server in case of outages.  Using a cronjob,
+the MySQL databases are exported as mysqldumps every day to ensure redundant storage
+of user and hurricane data
+
+
+3. RabbitMQ
+-----------
+
+The RabbitMQ system is comprised of Yvens/Jimmy's machines and serves as a medium
+for secure and reliable communication between all other connected machines.  This
+system features three separate clusters for Development, Quality Assurance (testing),
+and Production.  A hot standby for the Production server is in place in the event
+of a failure on the main production instance.  The RabbitMQ system hosts multiple
+channels for each other system to communicate not only with the central RabbitMQ
+server, but also with all other machines.
+
+
+4.  Data Extraction
+-------------------
+
+The data extraction system serves as a medium for collecting and passing data to
+the database for use on the front end on Kenny's machine.  Three separate clusters
+exist for Development, Quality Assurance (testing), and Production with a hot
+standby for the production server incase of a failure on the main.  The data extraction
+is comprised of API scripts making calls from multiple websites and other services
+such as Open Weather Map and ParseHub.
